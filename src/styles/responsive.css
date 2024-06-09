@@ -1,0 +1,132 @@
+/* ----- Extra small devices ----- */
+@media only screen and (max-width: 320px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logoFont,
+  .hero__title {
+    font-size: 1.5em;
+  }
+
+  .navItem a,
+  .hero__subtitle,
+  .btn {
+    font-size: 1em;
+  }
+}
+
+/* ----- Smaller devices ----- */
+@media screen and (max-width: 768px) {
+  .headerTitle {
+      display: flex;
+      padding-left: 10px;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .navigationDrawer {
+      line-height: 2rem;
+      margin-top: 0px;
+      color: var(--white);
+      text-decoration: none;
+  }
+
+  .navbarContainer {
+    width: 100%;
+    background-color: #4682B4;   /* Adjust the color for better visibility */
+    transition: all 0.4s ease;
+    position: absolute;
+    top: 63px; /* Adjustment for height of the navbar */
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;  /* Utilize the flex display */
+    flex-direction: column; /* Stack children elements vertically */
+    align-items: center; /* Center items horizontally */
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.open {
+  height: auto;
+  transform: scaleY(1);
+  padding: 20px 0; /* Add padding to ensure spacing */
+}
+
+.navigationDrawer {
+  color: #000; /* Make sure this contrasts with the background */
+}
+
+.navbarList {
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbarItem {
+  margin: 10px 0; /* Add top and bottom margins for spacing */
+}
+
+.navbarItem a, .navbarItem button {
+  font-size: 1.2rem; /* Increase font size for better readability */
+}
+
+  .navigationResponsive {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10px;
+  }
+
+  .headerInner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0px 30px;
+      margin-top: 0;
+  }
+}
+
+/* ----- Small devices ----- */
+@media only screen and (min-width: 600px) {
+  .mainContent__title {
+    margin-bottom: 1em;
+  }
+
+  #exploreRestaurant {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.545em;
+    grid-row-gap: 1.545em;
+  }
+}
+
+/* ----- Medium devices ----- */
+@media only screen and (min-width: 768px) {
+  .navigationResponsive {
+    display: none;
+  }
+}
+
+/* ----- Large devices ----- */
+@media only screen and (min-width: 992px) {
+  #exploreRestaurant {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* ----- Extra large devices ----- */
+@media only screen and (min-width: 1200px) {
+  main {
+    min-width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .team {
+      flex-direction: column;
+  }
+}
