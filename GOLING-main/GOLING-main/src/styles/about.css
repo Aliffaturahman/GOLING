@@ -1,0 +1,124 @@
+.abt-text p {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 40px 20px 0 20px;
+  padding: 0 20px;
+  line-height: 3;
+  text-align: center;
+}
+
+.test {
+  padding: 0 50px;
+}
+
+.about-us {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0;
+  background-color: var(--black);
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+@keyframes sliderShape{
+  0%,100%{
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  34%{
+      border-radius: 64% 30% 46% 54% / 30% 29% 71% 70%;
+    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+  }
+  50%{
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  67%{
+    border-radius: 89% 50% 60% 72% / 70% 80% 60% 60% ;
+    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+  }
+}
+
+.team {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 30px;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 300px;
+  padding: 10px 10px 20px 10px;
+  border-radius: 10px;
+  background-color: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member:hover {
+  box-shadow: 2px 2px 5px 0px rgba(53, 114, 239, 1);
+}
+
+.member .photo {
+  width: 100%;
+  height: 230px;
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.member p {
+  color: #333;
+  font-size: 0.8rem;
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px 10px 0px;
+  text-align: center;
+  overflow: auto;
+  max-height: 50px;
+}
+
+#photo1 {
+  background-image: url("../public/images/abt-man.jpg");
+}
+
+#photo2 {
+  background-image: url("../public/images/abt-zal.jpeg");
+}
+
+#photo3 {
+  background-image: url("../public/images/abt-lip.jpeg");
+}
+
+.footlinks p {
+  margin-top: 40px;
+  font-size: 17px;
+  color: var(--second-blue);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.abt-social a {
+  font-size: 25px;
+  margin: 4px;
+  height: 40px;
+  width: 40px;
+  color: var(--second-blue);
+  background-color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: ease 0.3s;
+}
+
+.abt-social a:hover {
+  transform: scale(1.2);
+}
